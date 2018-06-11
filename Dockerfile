@@ -5,7 +5,7 @@ EXPOSE 80
 FROM microsoft/aspnetcore-build:2.0 AS build
 WORKDIR /src
 
-COPY k8s_demo /src/k8s_demo
+COPY . /src/k8s_demo
 
 
 WORKDIR /src/k8s_demo
